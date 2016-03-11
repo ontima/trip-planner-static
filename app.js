@@ -23,6 +23,9 @@ app.use('/', routes);
 
 // the typical way to use express static middleware.
 app.use(express.static(path.join(__dirname, '/public')));
+app.use('/bootstrap', express.static(path.join(__dirname, '/node_modules/bootstrap/dist')));
+app.use('/jquery', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
+
 
 var server = app.listen(1337, function(){
   console.log('listening on port 1337');

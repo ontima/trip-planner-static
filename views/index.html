@@ -1,15 +1,22 @@
 <html>
+
+<head>
+<link href="/stylesheets/test.css" rel="stylesheet">
+</head>
+
 <ul>
 {% for hotel in templateHotels%}
 <li>{{hotel.name}}</li>
 {%endfor%}
 </ul>
 
+<div id="test">
 <ul>
 {% for restaurant in templateRestaurants %}
 <li>{{restaurant.name }}</li>
 {%endfor%}
 </ul>
+</div>
 
 <ul>
 {% for activity in templateActivities %}
