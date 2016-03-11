@@ -1,0 +1,35 @@
+body {
+  height: 100%; }
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding-top: 65px;
+  background: red; }
+
+.map {
+  height: 100%;
+  background: blue; }
+
+#selections {
+  background-color: aqua;
+  margin: 5px 4px;
+  padding: 5px 0px 4px 7px;
+  border-radius: 5px; }
+
+#info {
+  background-color: gray;
+  margin: 5px 4px;
+  border-radius: 5px; }
+
+.selectorGroup {
+  margin: 4px 0px; }
+
+.infoGroup {
+  margin: 4px 0 0 10px; }
+
+#dayLabel {
+  padding: 5px 0 4px 8px; }
+  #dayLabel h4 {
+    padding: 0;
+    margin: 0; }

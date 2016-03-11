@@ -1,27 +1,81 @@
-<html>
+{% extends "layout.html" %}
 
-<head>
-<link href="/stylesheets/test.css" rel="stylesheet">
-</head>
+{% block content %}
 
-<ul>
-{% for hotel in templateHotels%}
-<li>{{hotel.name}}</li>
-{%endfor%}
-</ul>
-
-<div id="test">
-<ul>
-{% for restaurant in templateRestaurants %}
-<li>{{restaurant.name }}</li>
-{%endfor%}
-</ul>
+<div class="map col-lg-8">
+Hello there
 </div>
 
-<ul>
-{% for activity in templateActivities %}
-<li>{{activity.name }}</li>
-{%endfor%}
-</ul>
+<div class="col-lg-4 sidebar">
+<div id="selections">
+	<div class="selectorGroup">
+		Hotels:
+		<br />  
+		<select>
+		{% for hotel in templateHotels %}
+		<option>{{hotel.name}}</option>
+		{%endfor%}
+		</select>
+		<br />
+	</div>
 
-</html>
+	<div class="selectorGroup">
+		Restaurants:
+		<br />  
+		<select>
+		{% for restaurant in templateRestaurants%}
+		<option>{{restaurant.name}}</option>
+		{%endfor%}
+		</select>
+	</div>
+
+	<div class="selectorGroup">
+		Things to Do
+		<br />  
+		<select>
+		{% for activity in templateActivities%}
+		<option>{{activity.name}}</option>
+		{%endfor%}
+		</select>
+	</div>
+
+
+	<!-- <div class="dropdown open">
+	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    Dropdown
+	  </button>
+	  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	  	{% for hotel in templateHotels%}
+	    <a class="dropdown-item" href="#">{{hotel.name}}</a>
+	    {%endfor%}
+	  </div>
+	</div> -->
+</div>
+
+	<div id="dayLabel">
+		<h4>Day X</h2>
+	</div>
+
+	<div id="info">
+
+		<div class="infoGroup">
+			My Hotel
+			<br />
+			5 Star Palace
+		</div>
+
+		<div class="infoGroup">
+			My Restaurants
+			<br />
+			The Pub
+		</div>
+
+		<div class="infoGroup">
+			My Activities
+			<br />
+			Coding
+		</div>
+
+</div>
+
+{% endblock %}
