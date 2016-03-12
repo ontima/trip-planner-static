@@ -1,24 +1,22 @@
-body {
+html, body {
   height: 100%; }
 
 .content {
   width: 100%;
   height: 100%;
-  padding-top: 65px;
-  background: red; }
+  padding-top: 65px; }
 
 .map {
-  height: 100%;
-  background: blue; }
+  height: 90%;
+  padding: 0 0 0 0;
+  margin: 0; }
 
 #selections {
-  background-color: aqua;
   margin: 5px 4px;
   padding: 5px 0px 4px 7px;
   border-radius: 5px; }
 
 #info {
-  background-color: gray;
   margin: 5px 4px;
   border-radius: 5px; }
 
@@ -33,3 +31,6 @@ body {
   #dayLabel h4 {
     padding: 0;
     margin: 0; }
+
+#footer {
+  float: left; }
