@@ -87,3 +87,9 @@ html, body {
 #footer {
 	float: left;
 }
+
+@media (max-width: 1200px) {
+	.sidebar{
+		padding-top: 10px
+	}
+}
