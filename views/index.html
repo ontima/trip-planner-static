@@ -39,6 +39,7 @@ Hello there
 		</select>
 	</div>
 
+	<button type="button" id="saveButton">Save</button>
 
 	<!-- <div class="dropdown open">
 	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,28 +57,42 @@ Hello there
 		<h4>Day X</h2>
 	</div>
 
-	<div id="info">
-
-		<div class="infoGroup">
-			My Hotel
-			<br />
-			5 Star Palace
+	<div class="dayGroup">
+		<div class="daySelector">
+			<span id="spacer"> </span>
+			<button type="button" class="dayButton dayButton-active" id="dayOne">1</button>
+			<button type="button" class="dayButton" id="dayTwo">2</button>
+			<button type="button" class="dayButton" id="dayThree">3</button>
+			<button type="button" class="dayButton" id="dayFour">4</button>
 		</div>
 
-		<div class="infoGroup">
-			My Restaurants
-			<br />
-			The Pub
-		</div>
+		<div id="info">
 
-		<div class="infoGroup">
-			My Activities
-			<br />
-			Coding
-		</div>
+			<div class="infoGroup">
+				<b>My Hotel</b>
+				<br />
+				5 Star Palace
+				<br />
+			</div>
 
-</div>
+			<div class="infoGroup">
+				<b>My Restaurants</b>
+				<br />
+				The Pub
+				<br />
+			</div>
+
+			<div class="infoGroup">
+				<b>My Activities</b>
+				<br />
+				Coding
+				<br />
+			</div>
+
+		</div>
+	</div>
 
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-p1UsgXUeDxiGblDhbtvE5tFP5G9jT2A&sensor=true"></script>
 <script src="/scripts/map.js"></script>
+<script type="/scripts/script.js"></script>
 {% endblock %}

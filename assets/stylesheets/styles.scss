@@ -1,5 +1,15 @@
 html, body {
 	height: 100%;
+	background-color: #BFB5AD;
+}
+
+#nav-custom{
+    background-color: #706357;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand{
+	color: #B0C9DE;
 }
 
 .content{
@@ -22,21 +32,47 @@ html, body {
 	margin: 5px 4px;
 	padding: 5px 0px 4px 7px;
 	border-radius: 5px;
-}
-
-#info{
-	margin: 5px 4px;
-	border-radius: 5px;
+	background-color: #EEECEA;
 }
 
 .selectorGroup{
 	margin: 4px 0px;
 }
 
+#saveButton{
+	margin: 6px 0;
+}
+
+.dayGroup{
+	margin: 5px 4px;
+	border-radius: 8px;
+	background-color: #EEECEA;
+}
+
+.daySelector{
+	background-color: #706357;
+	padding: 4px 0;
+}
+
+#spacer{
+	margin: 4px 0 0 10px;
+}
+
 .infoGroup{
 	margin: 4px 0 0 10px;
 }
 
+.dayButton{
+	color: #B0C9DE;
+	background-color: #706357;
+	border-radius: 20px;
+	border: 1px solid #B0C9DE;
+}
+
+.dayButton-active{
+	color: #706357;
+	background-color: #B0C9DE;
+}
 
 #dayLabel{
 
